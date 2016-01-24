@@ -18,7 +18,8 @@ emitter
 		`result` is an object that has a property called "type"
 
 		When "type" equals:
-			"ok" -- aspell has encountered a correctly spelled word.
+			"ok" -- aspell has encountered a correctly spelled word. By default
+                    you won't get "ok", as this is faster see API under terse.
 			  Other optional properties:
 				- "run-together" -- is true if aspell encounters a compound word
 			"misspelling" -- aspell has encountered a misspelled word.
@@ -40,6 +41,7 @@ emitter
 ## API
 
 - `require("aspell").args` -- Contains a list of arguments that aspell is ran with.  By default the list is `[ "--run-together" ]`.
+- `require("aspell").terse` -- Sets if aspell should be run in terse mode, aspell won't output "ok" for correctly typed words making it run faster.  By default this is `true`
 
 ## Getting node-aspell
 

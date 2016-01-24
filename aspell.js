@@ -34,6 +34,10 @@ function aspell(text) {
   var proc = spawn("aspell", [ "-a" ].concat(aspell.args || []));
   var emitter = new EventEmitter();
 
+  if (aspell.terse) {
+    text = "!" + text + "\n%";
+  }
+
   var buffer = "";
   proc.stderr.on("data", function(chunk) {
     emitter.emit("error", chunk);
@@ -57,5 +61,6 @@ function aspell(text) {
   return emitter;
 }
 aspell.args = [ "--run-together" ];
+aspell.terse = true;
 
 module.exports = aspell;
