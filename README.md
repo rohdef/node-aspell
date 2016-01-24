@@ -2,7 +2,7 @@
 
 A node.js module that parses [aspell](http://aspell.net/) output.  Aspell is a spell checker.
 
-Currently works with node.js v0.10.1+ (and probably lower).
+Currently works with node.js v0.10.1+ (and probably lower), latest tested with v5.4.1.
 
 ## Examples
 
@@ -54,6 +54,7 @@ Alternatively you can clone this git repository:
 
 ## Developed by
 * Xavi Ramirez
+* Rohde Fischer
 
 ## License
 This project is released under [The MIT License](http://www.opensource.org/licenses/mit-license.php).

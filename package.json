@@ -1,6 +1,6 @@
 {
   "name": "aspell",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A module that parses aspell output.",
   "keywords": [
     "aspell",
@@ -12,8 +12,19 @@
       "name": "Xavi",
       "email": "xavi.rmz@gmail.com",
       "web": "http://xavi.co"
+    },
+    {
+      "name": "rohdef",
+      "email": "rohdef@rohdef.dk",
+      "web": "http://rohdef.dk"
     }
   ],
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  },
+  "scripts": {
+    "test": "node runTests.js"
+  },
   "main": "./aspell.js",
   "repository": {
     "type": "git",
