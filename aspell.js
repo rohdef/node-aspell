@@ -35,7 +35,7 @@ function aspell(text) {
   var emitter = new EventEmitter();
 
   if (aspell.terse) {
-    text = "!" + text + "\n%";
+    text = "!\n" + text + "\n%";
   }
 
   var buffer = "";
